@@ -9,10 +9,7 @@ class SacolaDeCompra{
         alert(`Item "${item}" adicionado á lista.`);
     }
     listarItens(){
-        alert("Items na lista:");
-        this.itens.forEach((item,index) => {
-            alert(`${index + 1}. ${item}`);
-        })
+        alert(`Items na lista:${this.itens}`)
     }
     pesquisarItem(item){
         let index = this.itens.indexOf(item);
